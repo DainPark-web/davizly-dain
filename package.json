@@ -5,6 +5,11 @@
   "main": "dist/index.js",
   "module": "dist/index.js",
   "type": "module",
+  "keywords": [
+    "davizly",
+    "visualization",
+    "animation"
+  ],
   "scripts": {
     "start": "nodemon src/index.js",
     "build": "rollup --config",
@@ -14,7 +19,10 @@
     "dist/**/*",
     "src/**/*"
   ],
-  "author": "dain park",
+  "author": {
+    "name": "Dain Park",
+    "email": "zndgn555@gmail.com"
+  },
   "license": "ISC",
   "devDependencies": {
     "@rollup/plugin-commonjs": "^25.0.7",
