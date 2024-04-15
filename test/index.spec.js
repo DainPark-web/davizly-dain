@@ -10,5 +10,9 @@ describe("App index test!", function(){
             // assert.equal(davizly.mochaTest(), "hello dain")
             davizly.mochaTest().should.equal("hello dain")
         })
+        it("should be a string type✅", function(){
+            // assert.equal(davizly.mochaTest(), "hello dain")
+            davizly.mochaTest().should.be.a("string")
+        })
     })
 })
