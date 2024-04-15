@@ -1,6 +1,6 @@
 {
   "name": "davizly-dain",
-  "version": "1.0.9",
+  "version": "1.0.11",
   "description": "",
   "main": "dist/index.js",
   "module": "dist/index.js",
@@ -11,7 +11,7 @@
     "animation"
   ],
   "scripts": {
-    "start": "nodemon src/index.js",
+    "dev": "nodemon src/index.js",
     "build": "rollup --config",
     "prepublishOnly": "rm -rf dist && rollup -c"
   },
@@ -26,12 +26,14 @@
   "license": "MIT",
   "devDependencies": {
     "@rollup/plugin-commonjs": "^25.0.7",
+    "@rollup/plugin-json": "^6.1.0",
     "@rollup/plugin-node-resolve": "^15.2.3",
     "@rollup/plugin-terser": "^0.4.4",
     "nodemon": "^3.1.0",
     "rollup": "^4.14.2"
   },
-  "dependencies": {
-    "@rollup/plugin-json": "^6.1.0"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DainPark-web/davizly-dain.git"
   }
 }
