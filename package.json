@@ -6,7 +6,8 @@
   "type": "module",
   "scripts": {
     "start": "nodemon src/index.js",
-    "build": "rollup --config"
+    "build": "rollup --config",
+    "prepublishOnly": "rm -rf dist && rollup -c"
   },
   "author": "dain park",
   "license": "ISC",
