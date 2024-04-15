@@ -1,6 +1,6 @@
 # Davizly-dain
 
-Welcome to **Davizly-dain**, an open-source data visualization library designed to help developers and data scientists create intuitive and dynamic visual representations of their data. This library is part of a personal project aimed at practicing and enhancing my programming skills while contributing valuable tools to the community.
+Welcome to **Davizly-dain**, an open-source data visualization library designed to help developers, data scientists and information designers create intuitive and dynamic visual representations of their data. This library is part of a personal project aimed at practicing and enhancing my programming skills while contributing valuable tools to the community.
 
 ## Installation
 
@@ -15,8 +15,6 @@ npm i davizly-dain
 - **Custom Visualizations**: Extend the library with your own custom visualizations using simple API hooks.
 
 ## Usage
-
-
 
 ## License
 
