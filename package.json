@@ -8,7 +8,7 @@
   "scripts": {
     "start": "nodemon src/index.js",
     "build": "rollup --config",
-    "prepublishOnly": "rollup --config"
+    "prepublishOnly": "rm -rf dist && rollup -c"
   },
   "files": [
     "dist/**/*",
@@ -17,11 +17,13 @@
   "author": "dain park",
   "license": "ISC",
   "devDependencies": {
+    "@rollup/plugin-commonjs": "^25.0.7",
+    "@rollup/plugin-node-resolve": "^15.2.3",
     "@rollup/plugin-terser": "^0.4.4",
     "nodemon": "^3.1.0",
     "rollup": "^4.14.2"
   },
   "dependencies": {
-  
+    "@rollup/plugin-json": "^6.1.0"
   }
 }

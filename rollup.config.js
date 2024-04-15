@@ -1,5 +1,9 @@
-// rollup.config.mjs
+// rollup.config.js
+import commonjs from '@rollup/plugin-commonjs';
+import json from '@rollup/plugin-json';
+import nodeResolve from '@rollup/plugin-node-resolve';
 import terser from '@rollup/plugin-terser';
+
 
 export default {
 	input: 'src/index.js',
@@ -15,5 +19,11 @@ export default {
 			plugins: [terser()]
 		}
 	],
-	plugins: []
+	plugins: [
+		json(), 
+		nodeResolve(),
+		commonjs({
+		include : 'node_modules/**'
+	})
+]
 };
