@@ -1,9 +1,14 @@
-import assert from "assert";
-import { mochaTest } from "../src/index.js";
-describe("App test!", function(){
-    it("mochaTest should return hello dain", function(done){
-        if(mochaTest() === "hello dain"){
-            done()
-        }
+// import assert from "assert";
+import {should} from "chai";
+import * as davizly from "../src/index.js";
+
+should();
+
+describe("App index test!", function(){
+    describe("mochaTest", function(){
+        it("mochaTest should return hello dain✅", function(){
+            // assert.equal(davizly.mochaTest(), "hello dain")
+            davizly.mochaTest().should.equal("hello dain")
+        })
     })
 })
