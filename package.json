@@ -11,6 +11,7 @@
     "animation"
   ],
   "scripts": {
+    "test": "mocha test/**/*.spec.js",
     "dev": "nodemon src/index.js",
     "build": "rollup --config",
     "prepublishOnly": "rm -rf dist && rollup -c"
@@ -29,6 +30,7 @@
     "@rollup/plugin-json": "^6.1.0",
     "@rollup/plugin-node-resolve": "^15.2.3",
     "@rollup/plugin-terser": "^0.4.4",
+    "mocha": "^10.4.0",
     "nodemon": "^3.1.0",
     "rollup": "^4.14.2"
   },
