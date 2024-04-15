@@ -1,6 +1,6 @@
 {
   "name": "davizly-dain",
-  "version": "1.0.3",
+  "version": "1.0.6",
   "description": "",
   "module": "dist/index.js",
   "type": "module",
