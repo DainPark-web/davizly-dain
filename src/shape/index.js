@@ -1,2 +1,1 @@
-export {default as draw} from "./drawing.js"
-export {default as circle} from "./circle.js"
+export {default as Circle} from "./circle.js"

@@ -1,3 +1,4 @@
-export * from "./shape";
+export * from "./shape/index.js";
+
 
 

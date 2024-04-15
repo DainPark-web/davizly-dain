@@ -1,12 +1,15 @@
-class Circle {
-    constructor(x, y, r){
-        this.x = x;
-        this.y = y;
-        this.r = r;
-    }
-    draw(){
+const createShape = ({pos}) => {
+    class Circle {
+        constructor(pos){
+           this.pos = pos
 
+           Object.seal(this)
+        }
+        draw(){
+    
+        }
     }
+    return new Circle(pos)
 }
 
-export default Circle;
+export default createShape;
