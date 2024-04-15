@@ -3,13 +3,17 @@
   "version": "1.0.1",
   "description": "",
   "main": "dist/index.js",
+  "module": "dist/index.js",
   "type": "module",
   "scripts": {
-    "start": "nodemon src/index.js"
+    "start": "nodemon src/index.js",
+    "build": "rollup --config"
   },
   "author": "dain park",
   "license": "ISC",
   "devDependencies": {
-    "nodemon": "^3.1.0"
+    "@rollup/plugin-terser": "^0.4.4",
+    "nodemon": "^3.1.0",
+    "rollup": "^4.14.2"
   }
 }
