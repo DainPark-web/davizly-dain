@@ -1,4 +1,4 @@
-const createShape = ({pos}) => {
+const createShape = ({pos = {x:0, y:0}}) => {
     class Circle {
         constructor(pos){
            this.pos = pos
