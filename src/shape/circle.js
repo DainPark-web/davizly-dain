@@ -1,5 +1,3 @@
-import { JSDOM } from "jsdom";
-const { document } = (new JSDOM()).window;
 
 const createShape = () => {
     const svgns = "http://www.w3.org/2000/svg";

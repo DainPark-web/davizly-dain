@@ -1,6 +1,6 @@
 {
   "name": "davizly-dain",
-  "version": "1.0.14",
+  "version": "1.0.17",
   "description": "",
   "main": "dist/index.js",
   "module": "dist/index.js",
@@ -34,12 +34,13 @@
     "mocha": "^10.4.0",
     "nodemon": "^3.1.0",
     "rollup": "^4.14.2"
+   
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/DainPark-web/davizly-dain.git"
   },
   "dependencies": {
-    "jsdom": "^24.0.0"
+  
   }
 }
