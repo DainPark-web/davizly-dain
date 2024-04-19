@@ -1,11 +1,27 @@
+// const createShape = () => {
+//     const svgns = "http://www.w3.org/2000/svg";
+//     let circle = document.createElementNS(svgns, "circle");
+//     circle.setAttributeNS(null, 'cx', 10);
+//     circle.setAttributeNS(null, 'cy', 10);
+//     circle.setAttributeNS(null, 'r', 50);
+//     return circle;
+// };
 
-const createShape = () => {
+// export default createShape;
+
+class Circle {
+  constructor() {
+    this.circle;
+  }
+
+  draw() {
     const svgns = "http://www.w3.org/2000/svg";
     let circle = document.createElementNS(svgns, "circle");
-    circle.setAttributeNS(null, 'cx', 10);
-    circle.setAttributeNS(null, 'cy', 10);
-    circle.setAttributeNS(null, 'r', 50);
+    this.circle = circle;
     return circle;
-};
-
-export default createShape;
+  }
+  pos(pos){
+    this.circle.setAttribute("x", pos.x)
+    this.circle.setAttribute("y", pos.y)
+  }
+}
