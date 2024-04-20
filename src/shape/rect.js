@@ -1,4 +1,4 @@
-import BasicShape from "./shape";
+import BasicShape from "./shape.js";
 
 
 function createRect(x=0,y=0, width=10, height=10) {

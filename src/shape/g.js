@@ -1,4 +1,4 @@
-import BasicShape from "./shape";
+import BasicShape from "./shape.js";
 
 function createG() {
   class G extends BasicShape {

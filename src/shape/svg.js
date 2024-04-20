@@ -1,4 +1,4 @@
-import BasicShape from "./shape";
+import BasicShape from "./shape.js";
 
 
 function createSVG(width=200, height=100) {

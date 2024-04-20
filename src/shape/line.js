@@ -1,4 +1,4 @@
-import BasicShape from "./shape";
+import BasicShape from "./shape.js";
 
 function createLine(x1="0", y1="80", x2="100", y2="20", stroke="black") {
   class Line extends BasicShape {

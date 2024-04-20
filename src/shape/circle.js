@@ -1,4 +1,4 @@
-import BasicShape from "./shape";
+import BasicShape from "./shape.js";
 
 
 function createCircle(x = 0,y = 0,r = 10) {
