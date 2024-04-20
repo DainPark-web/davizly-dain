@@ -1,8 +1,8 @@
-import { svgUrl } from "../utils/constant.js";
+
 
 class BasicShape {
     constructor(shapeName) {
-      this.svgns = svgUrl;
+      this.svgns = "http://www.w3.org/2000/svg"
       this.shape = document.createElementNS(this.svgns, shapeName);
    
     }
