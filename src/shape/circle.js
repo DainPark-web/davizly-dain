@@ -8,6 +8,7 @@ function Circle(x = 0,y = 0,r = 10) {
       this.shape.setAttributeNS(null, "cx", x2);
       this.shape.setAttributeNS(null, "cy", y2);
       this.shape.setAttributeNS(null, "r", r2);
+      this.shape.setAttributeNS(null, "fill", "black");
     }
   
   }
