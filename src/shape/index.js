@@ -12,6 +12,7 @@ export {default as A} from "./a.js"
 export {default as Animate} from "./animate.js"
 export {default as AnimateMotion} from "./animateMotion.js"
 export {default as ClipPath} from "./clipPath.js"
+export {default as JoinData} from "./joindata.js"
 
 
 

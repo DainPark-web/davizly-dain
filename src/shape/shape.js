@@ -18,6 +18,7 @@ class BasicShape {
     node(){
       return this.shape
     }
+
   }
 
 export default BasicShape;

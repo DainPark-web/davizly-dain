@@ -1,8 +1,8 @@
 import BasicShape from "./shape.js";
 
 
-function Circle(x = 0,y = 0,r = 10) {
-  class newCircle extends BasicShape {
+function createCircle(x = 0,y = 0,r = 10) {
+  class Circle extends BasicShape {
     constructor(x2, y2, r2) {
       super("circle")
       this.shape.setAttributeNS(null, "cx", x2);
@@ -12,7 +12,7 @@ function Circle(x = 0,y = 0,r = 10) {
     }
   
   }
-  return new newCircle(x, y, r)
+  return new Circle(x, y, r)
 }
 
-export default Circle;
+export default createCircle;
