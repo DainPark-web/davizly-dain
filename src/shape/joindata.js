@@ -16,6 +16,7 @@ function createJoinData(data){
       }
       return this;
     }
+
     appendTo(parent) {
       if (this.data.length > 0) {
         for (let i = 0; i < this.shapes.length; i++) {
@@ -24,10 +25,11 @@ function createJoinData(data){
       }
       return this;
     }
+
     attr(att, value) {
       if(typeof value === "function"){
         this.data.forEach((element, index) => {
-          this.shapes[i].attr(att, value(element, index))
+          this.shapes[index].attr(att, value(element, index))
         })
       }else {
         for (let i = 0; i < this.data.length; i++) {
@@ -36,6 +38,7 @@ function createJoinData(data){
       }
       return this;
     }
+    
     node(){
       return this.shapes
     }
