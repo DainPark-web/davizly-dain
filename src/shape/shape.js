@@ -11,7 +11,7 @@ class BasicShape {
       parent.append(this.shape)
       return this;
     }
-    attrTo(att, value){
+    attr(att, value){
         this.shape.setAttributeNS(null, att, value);
       return this;
     }

@@ -8,6 +8,7 @@ export {default as Image} from "./image.js"
 export {default as Use} from "./use.js"
 export {default as Polygon} from "./polygon.js"
 export {default as Symbol} from "./symbol.js"
+export {default as A} from "./a.js"
 
 
 
