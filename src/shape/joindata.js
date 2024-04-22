@@ -1,4 +1,4 @@
-import BasicShape from "./shape";
+import BasicShape from "./shape.js";
 
 
 function createJoinData(data){
@@ -10,14 +10,16 @@ function createJoinData(data){
   
     connectShape(shape) {
       if (this.data.length > 0) {
+      this.data.forEach((element, index) => {
         this.shapes.push(new BasicShape(shape))
+      })
       }
       return this;
     }
     appendTo(parent) {
       if (this.data.length > 0) {
         for (let i = 0; i < this.shapes.length; i++) {
-          parent.append(this.shapes[i]);
+          parent.append(this.shapes[i].node());
         }
       }
       return this;
