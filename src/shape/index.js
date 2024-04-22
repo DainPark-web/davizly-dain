@@ -10,6 +10,7 @@ export {default as Polygon} from "./polygon.js"
 export {default as Symbol} from "./symbol.js"
 export {default as A} from "./a.js"
 export {default as Animate} from "./animate.js"
+export {default as AnimationMotion} from "./animationMotion.js"
 
 
 
