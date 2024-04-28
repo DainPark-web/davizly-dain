@@ -32,6 +32,17 @@ function createJoinData(data){
       }
       return this;
     }
+    style(style, value){
+      if(typeof value === "function"){
+        this.data.forEach((element, index) => {
+          this.shapes[index].style[style] = value(element, index)
+        })
+      }else {
+        for (let i = 0; i < this.data.length; i++) {
+          this.shapes[i].style[style] = value;
+        }
+      }
+    }
 
     attr(att, value) {
       if(typeof value === "function"){
