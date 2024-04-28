@@ -8,12 +8,21 @@ class BasicShape {
     }
   
     appendTo(parent){
-      parent.append(this.shape)
+      if(typeof parent.node === "function"){
+
+        parent.node().append(this.shape)
+      }else{
+        parent.append(this.shape)
+
+      }
       return this;
     }
     attr(att, value){
         this.shape.setAttributeNS(null, att, value);
       return this;
+    }
+    style(style, value){
+      this.shape.style[style] = value;
     }
     node(){
       return this.shape

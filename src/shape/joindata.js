@@ -20,7 +20,14 @@ function createJoinData(data){
     appendTo(parent) {
       if (this.data.length > 0) {
         for (let i = 0; i < this.shapes.length; i++) {
-          parent.append(this.shapes[i].node());
+          parent.node().append(this.shapes[i].node());
+          if(typeof parent.node === "function"){
+
+            parent.node().append(this.shapes[i].node());
+          }else{
+            parent.append(this.shapes[i].node());
+    
+          }
         }
       }
       return this;
