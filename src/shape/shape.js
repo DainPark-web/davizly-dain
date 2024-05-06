@@ -23,6 +23,7 @@ class BasicShape {
     }
     style(style, value){
       this.shape.style[style] = value;
+      return this;
     }
     node(){
       return this.shape
