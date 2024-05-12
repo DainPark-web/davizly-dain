@@ -28,8 +28,9 @@ class BasicShape {
     node(){
       return this.shape
     }
-    on(){
+    on(event, func){
       // TODO
+      this.shape.addEventListener(event, func)
       return this;
     }
 

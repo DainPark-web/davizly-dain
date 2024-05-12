@@ -61,6 +61,17 @@ function createJoinData(data){
     node(){
       return this.shapes
     }
+    on(event, func){
+       // TODO
+       if(typeof func === "function"){
+        this.data.forEach((element, index) => {
+          this.shapes[index].on(event, (e) => {
+            func(e, element, index, this.shapes[index])
+          })
+        })
+      }
+       return this;
+    }
   }
 
   return new JoinData(data)
