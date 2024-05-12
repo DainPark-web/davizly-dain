@@ -28,6 +28,10 @@ class BasicShape {
     node(){
       return this.shape
     }
+    on(){
+      // TODO
+      return this;
+    }
 
   }
 

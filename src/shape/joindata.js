@@ -42,6 +42,7 @@ function createJoinData(data){
           this.shapes[i].style(style, value)
         }
       }
+      return this
     }
 
     attr(att, value) {
