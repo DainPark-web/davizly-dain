@@ -3,7 +3,7 @@ async function createDataFetch({ baseUrl, params, method }) {
     const baseUrld = new URL(baseUrl);
     if (params && params.length > 0) {
       params.forEach((ele, idx) => {
-        baseUrld.searchParams.set(ele.name, ele.name);
+        baseUrld.searchParams.set(ele.name, ele.value);
       });
     }
     const res = await fetch(baseUrld.href, {
