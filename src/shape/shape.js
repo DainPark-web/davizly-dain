@@ -13,6 +13,10 @@ class BasicShape {
     return this;
   }
   attr(att, value) {
+    /* 
+      x,y,r,cx,cy,fill,width,height,viewBox,href,transform, ...etc
+      preserveAspectRatio
+    */
     this.shape.setAttributeNS(null, att, value);
     return this;
   }
