@@ -2,6 +2,8 @@
 
 Welcome to **Davizly-dain**, an open-source data visualization library designed to help developers, data scientists and information designers create intuitive and dynamic visual representations of their data. This library is part of a personal project aimed at practicing and enhancing my programming skills while contributing valuable tools to the community.
 
+### Version2 Comming soon
+
 #### [Documentation &rarr;](docs/readme.md)
 
 ## Installation
