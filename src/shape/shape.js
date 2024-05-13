@@ -21,6 +21,8 @@ class BasicShape {
         this.shape.setAttributeNS(null, att, value);
       return this;
     }
+    // TODO: GetAttr
+
     style(style, value){
       this.shape.style[style] = value;
       return this;
@@ -29,7 +31,6 @@ class BasicShape {
       return this.shape
     }
     on(event, func){
-      // TODO
       this.shape.addEventListener(event, func)
       return this;
     }
